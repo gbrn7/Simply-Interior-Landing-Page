@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2080;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 992px) {
+  .navbar .container .box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3px;
+  }
+}
+.navbar .container .box .navbar-brand {
+  font-weight: 700;
+  color: rgb(247, 188, 88);
+  font-size: 23px;
+  text-shadow: 2px 2px 1px #8a8a8a;
+}
+.navbar .container .box .navbar-brand span {
+  margin-left: 2px;
+  color: rgb(245, 245, 245);
+}
+@media (max-width: 575.98px) {
+  .navbar .container .box .navbar-brand {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .container .toggle-navbar {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+}
+.navbar .container .toggle-navbar .nav-item {
+  transition: 0.5s all ease;
+}
+@media (min-width: 992px) {
+  .navbar .container .toggle-navbar .nav-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.navbar .container .toggle-navbar .nav-item .nav-link {
+  color: rgb(107, 107, 107);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+.navbar .container .toggle-navbar .nav-item .nav-link:hover {
+  color: rgb(245, 245, 245);
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle-navbar .nav-item .nav-link {
+    font-size: 12px;
+  }
+}
+.navbar .container .toggle-navbar .nav-item:hover {
+  background-color: rgb(247, 188, 88);
+}
+.navbar .container .toggle-navbar .nav-item:hover a {
+  color: rgb(245, 245, 245);
+}
+.navbar .container .toggle-navbar .nav-item:nth-child(6) .nav-link {
+  font-weight: 500;
+}
+.navbar .container .num-container .number {
+  font-weight: 500;
+  color: rgb(107, 107, 107);
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+.navbar.show {
+  background-color: rgba(245, 245, 245, 0.911);
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.nav-link.active {
+  color: rgb(247, 188, 88);
+  font-weight: 500 !important;
+}
+
+.home {
+  height: 100vh;
+  background-image: url(../img/pickawood-GN9JhLPw3ow-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+}
+.home .home-wrapper .head {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  line-height: 2;
+}
+.home .home-wrapper .head .one {
+  color: rgb(247, 188, 88);
+  background-color: rgb(245, 245, 245);
+}
+.home .home-wrapper .head .two {
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .home .home-wrapper .head {
+    font-size: 45px;
+  }
+}
+.home .home-wrapper .desc {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+}
+.home .home-wrapper .desc span {
+  background-color: rgb(245, 245, 245);
+}
+@media (max-width: 575.98px) {
+  .home .home-wrapper .desc {
+    font-size: 12px;
+  }
+}
+.home .home-wrapper .btn-more {
+  padding: 10px 80px;
+  background-color: rgb(247, 188, 88);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+  margin-top: 20px;
+}
+.home .home-wrapper .btn-more:hover {
+  background-color: rgb(245, 245, 245);
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .home .home-wrapper .btn-more {
+    font-size: 12px;
+    padding: 7px 60px;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.about {
+  padding: 150px 0;
+}
+.about .about-wrapper .title h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.about .about-wrapper .title p {
+  font-weight: 300;
+}
+.about .about-wrapper .history {
+  margin-top: 30px;
+  align-items: center;
+}
+.about .about-wrapper .history .img-wrapper img {
+  border-radius: 10px;
+}
+.about .about-wrapper .history .desc {
+  text-align: justify;
+}
+.about .about-wrapper .history .desc i {
+  font-size: 25px;
+}
+.about .about-wrapper .history .desc h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+@media (max-width: 767.98px) {
+  .about .about-wrapper .history .desc h1 {
+    font-size: 25px;
+  }
+}
+.about .about-wrapper .history .desc p {
+  font-size: 16px;
+  font-weight: 300;
+}
+@media (max-width: 767.98px) {
+  .about .about-wrapper .history .desc p {
+    font-size: 15px;
+  }
+}
+.about .about-wrapper .history .desc .btn-more {
+  padding: 10px 80px;
+  background-color: rgb(247, 188, 88);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+.about .about-wrapper .history .desc .btn-more:hover {
+  background-color: rgb(245, 245, 245);
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .about .about-wrapper .history .desc .btn-more {
+    font-size: 12px;
+    padding: 10px 60px;
+  }
+}
+
+.service {
+  background-color: #f5f5f5;
+  padding: 150px 0;
+}
+.service .title h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.service .title p {
+  font-weight: 300;
+}
+.service .content-down {
+  margin-top: 30px;
+}
+.service .content-down .img-wrapper {
+  border-radius: 10px;
+}
+.service .content-down .img-wrapper .img-box {
+  position: relative;
+}
+.service .content-down .img-wrapper .img-box .detail {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199, 197, 197, 0.884);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+  transition: 0.4s ease-in-out;
+}
+.service .content-down .img-wrapper .img-box .detail .price {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+.service .content-down .img-wrapper .img-box .detail .price span {
+  color: rgb(255, 230, 188);
+}
+.service .content-down .img-wrapper .img-box .detail .title {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0;
+}
+.service .content-down .img-wrapper .img-box .detail .desc {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.service .content-down .img-wrapper .img-box img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.service .content-down .img-wrapper .img-box:hover .detail {
+  -webkit-clip-path: circle(70.7% at 50% 50%);
+          clip-path: circle(70.7% at 50% 50%);
+  transition: 0.4s ease-in-out;
+}
+.service .btn-more {
+  padding: 10px 80px;
+  background-color: rgb(247, 188, 88);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+.service .btn-more:hover {
+  background-color: rgb(245, 245, 245);
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .service .btn-more {
+    font-size: 12px;
+    padding: 10px 60px;
+  }
+}
+
+.news {
+  padding: 150px 0;
+}
+.news .news-wrapper .title h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.news .news-wrapper .title p {
+  font-weight: 300;
+}
+.news .news-wrapper .low-content {
+  margin-top: 30px;
+}
+.news .news-wrapper .low-content .title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.news .news-wrapper .low-content .date {
+  font-family: 300;
+  color: rgb(247, 188, 88);
+}
+.news .news-wrapper .low-content .desc {
+  font-family: 300;
+  font-size: 16px;
+}
+.news .news-wrapper .low-content .btn-more {
+  padding: 10px 60px;
+  background-color: rgb(247, 188, 88);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+.news .news-wrapper .low-content .btn-more:hover {
+  background-color: rgb(245, 245, 245);
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .news .news-wrapper .low-content .btn-more {
+    font-size: 12px;
+    padding: 10px 60px;
+  }
+}
+.news .news-wrapper .low-content .img-wrapper img {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.sign-up {
+  background-color: #f5f5f5;
+  padding: 150px 0;
+  background-image: url(../img/jonny-caspari-KuudDjBHIlA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sign-up .sign-up-wrapper .btn-more {
+  padding: 10px 80px;
+  background-color: rgb(247, 188, 88);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(245, 245, 245);
+}
+.sign-up .sign-up-wrapper .btn-more:hover {
+  background-color: rgb(245, 245, 245);
+  color: rgb(247, 188, 88);
+}
+@media (max-width: 575.98px) {
+  .sign-up .sign-up-wrapper .btn-more {
+    font-size: 12px;
+    padding: 10px 60px;
+  }
+}
+
+.footer {
+  background-color: rgb(42, 42, 42);
+  padding: 100px 0;
+}
+.footer .footer-wrapper .foot .navbar-brand {
+  font-weight: 700;
+  color: rgb(247, 188, 88);
+  font-size: 23px;
+  text-shadow: 2px 2px 1px #8a8a8a;
+}
+.footer .footer-wrapper .foot .navbar-brand span {
+  margin-left: 2px;
+  color: rgb(245, 245, 245);
+}
+.footer .footer-wrapper .foot .title {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+.footer .footer-wrapper .foot a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-wrapper .foot .desc {
+  font-weight: 300;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
