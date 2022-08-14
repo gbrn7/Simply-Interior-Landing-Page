@@ -121,13 +121,13 @@ body{
 
     .home-wrapper{
         .head{
-            font-size: 40px;
+            font-size: 70px;
             color: white;
             font-weight: map-get($fonts-weights, bold );
             line-height: 2;
+            text-shadow: 6px 1px 5px rgba(0,0,0,0.52);
             .one{
                 color: $second_color;
-                background-color: $white-color;
             }
             .two{
                 color: $second_color;
@@ -138,8 +138,9 @@ body{
         }
         .desc{
             color:whitesmoke;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: map-get($fonts-weights , semiBold );
+            text-shadow: 6px 1px 5px rgba(0,0,0,0.8);
             span{
                 background-color: $white-color;
             }
@@ -151,7 +152,7 @@ body{
         .btn-more{
             padding: 10px 80px;
             background-color: $second_color;;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: map-get($fonts-weights, bold );
             color: $white-color;
             margin-top: 20px;
