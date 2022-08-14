@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
   margin: 0;
 }
 .service .content-down .img-wrapper .img-box .detail .price span {
-  color: rgb(255, 230, 188);
+  color: white;
 }
 .service .content-down .img-wrapper .img-box .detail .title {
   font-weight: 500;
